@@ -62,7 +62,6 @@ This stage involves cleaning, transforming, and organizing data so that it can b
 ![telco](./images/churn_class.png)
 
 From the plot we notice a class imbalace issue, which we try to sort later on with SMOTE, and oversampling technique
-![telco](./images/churn_rate.png)
 
 **We also look at how features are correlated to the target variable using a barplot**
 
@@ -70,7 +69,7 @@ From the plot we notice a class imbalace issue, which we try to sort later on wi
 The graph shows features that are positively correlated to the target feature on the upper side while the ones that have a negative correlation on the lower side
 
 **Trendline showing the churn rate as relates to the the tenure a customer has stayed in a company**
-![telco](./images/most_correlated.png)
+![telco](./images/churn_rate.png)
 
 The Churn rate decreases with increase in tenure
 
@@ -92,7 +91,7 @@ The ROC score is 74% which shows our model is performing quite well But we can i
 
 ### Best Model: Random Forest
 Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap and Aggregation, commonly known as bagging. The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees.Random forest has an advantage of low variance compared to decision tree.
-![telco](./images/forest.png)
+![telco](./images/forest.PNG)
 
 We get an ROC of 76% which is a reasonable accuracy, but there is room for improvement.For instance using we can try to use models that more advanced in classifying imbalanced data such as Convolutional Neural Networks
 
