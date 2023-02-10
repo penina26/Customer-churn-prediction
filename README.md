@@ -59,21 +59,21 @@ This stage involves cleaning, transforming, and organizing data so that it can b
 ## Data Exploration
 The goal of is to understand the structure, patterns, and relationships in the data.We wil first look at the distribution of data in our target variable 
 
-![telco]('./images/churn_class.png')
+![telco](./images/churn_class.png)
 
 From the plot we notice a class imbalace issue, which we try to sort later on with SMOTE, and oversampling technique
-![telco]('./images/churn_rate.png')
+![telco](./images/churn_rate.png)
 2.Bar Plot
 We also look at how features are correlated to the target variable using a barplot
 
-![telco]('./images/churn_features.png')
+![telco](./images/churn_features.png)
 
 Trendline showing the churn rate as relates to the the tenure a customer has stayed in a company
-![telco]('./images/most_correlated.png')
+![telco](./images/most_correlated.png)
 
 A deeper look at different cohorts of customers showing their monthly charges against total charges and thier Churn rate
 
-![telcon]('./images/total_month_charges.png')
+![telcon](./images/total_month_charges.png)
 
 ## Modeling
 
@@ -82,13 +82,13 @@ A deeper look at different cohorts of customers showing their monthly charges ag
 
 Logistic regression is used to estimate the probability of descrete values based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure. This is also commonly known as the log odds, or the natural logarithm of odds. We will use it as our baseline model since It is very fast at classifying unknown records.
 
-![realestate]('/images/logisticreg.png')
+![realestate](./images/logisticreg.png)
 
 The ROC score is 74% which shows our model is performing quite well But we can impove on it as a score of close to 100 is the bes
 
 ### Best Model: Random Forest
 Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap and Aggregation, commonly known as bagging. The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees.Random forest has an advantage of low variance compared to decision tree.
-![realestate]("./images/randomFRE.png")
+![realestate](./images/randomFRE.png)
 
 We get an ROC of 76% which is a reasonable accuracy, but there is room for improvement.For instance using we can try to use models that more advanced in classifying imbalanced data such as Convolutional Neural Networks
 
@@ -109,7 +109,7 @@ From the Analysis, More attention should be given to customers who are on month-
 
 
 ## For More Information
-See full analysis in <a href ="index.ipynb">student.ipynb</a> or my presentation <a href ="presentation.pdf">here</a>
+See full analysis in <a href ="index.ipynb">student.ipynb</a> or my presentation <a href ="Analysis of Telco Churn Rate.pdf">here</a>
 
 
 # Repository Structure
