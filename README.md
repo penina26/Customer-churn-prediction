@@ -17,27 +17,27 @@ The Telco customer churn data contains information about a fictional telecommuni
 
 The features in the data are:
 
-* **.customerID** - a unique identifier for each customer
+* **customerID** - a unique identifier for each customer
 * **gender** - indicates the gender of the customer (male or female)
 * **SeniorCitizen** - indicates whether the customer is a senior citizen (represented as 1 for yes and 0 for no)
-4. Partner - indicates whether the customer has a partner (represented as "Yes" or "No")
-5. Dependents - indicates whether the customer has dependents, who rely on them as a primary source of income (represented as "Yes" or "No")
-6. tenure - the number of months the customer has been with the company
-7. PhoneService - indicates whether the customer has a phone service (represented as "Yes" or "No")
-8. MultipleLines - indicates whether the customer has multiple phone lines (represented as "Yes," "No," or "No phone service")
-9. InternetService - the customer's internet service provider (represented as "DSL," "Fiber optic," or "No")
-10. OnlineSecurity - indicates whether the customer has online security (represented as "Yes," "No," or "No internet service")
-11. OnlineBackup - indicates whether the customer has online backup (represented as "Yes," "No," or "No internet service")
-12. DeviceProtection - indicates whether the customer has device protection (represented as "Yes," "No," or "No internet service")
-13. TechSupport - indicates whether the customer has tech support (represented as "Yes," "No," or "No internet service")
-14. StreamingTV - indicates whether the customer has streaming TV (represented as "Yes," "No," or "No internet service")
-15. StreamingMovies - indicates whether the customer has streaming movies (represented as "Yes," "No," or "No internet service")
-16. Contract - indicates the type of contract the customer has according to duration (represented as "Month-to-month," "One year," or "Two year")
-17. PaperlessBilling - indicates whether the customer's bills are issued in paperless form (represented as "Yes" or "No")
-18. PaymentMethod - the payment method used by the customer (represented as "Electronic check," "Mailed check," "Credit card (automatic)," or "Bank transfer (automatic)")
-19. MonthlyCharges - the amount charged for service on a monthly basis
-20. TotalCharges - the cumulative charges for service during the customer's subscription (tenure) period
-21. Churn - the target variable that we are trying to predict or estimate, indicating whether the customer has left, stayed, or signed up for the service.
+* **Partner** - indicates whether the customer has a partner (represented as "Yes" or "No")
+* **Dependents** - indicates whether the customer has dependents, who rely on them as a primary source of income (represented as "Yes" or "No")
+* **tenure** - the number of months the customer has been with the company
+* **PhoneService** - indicates whether the customer has a phone service (represented as "Yes" or "No")
+* **MultipleLines** - indicates whether the customer has multiple phone lines (represented as "Yes," "No," or "No phone service")
+* **InternetService** - the customer's internet service provider (represented as "DSL," "Fiber optic," or "No")
+* **OnlineSecurity** - indicates whether the customer has online security (represented as "Yes," "No," or "No internet service")
+* **OnlineBackup** - indicates whether the customer has online backup (represented as "Yes," "No," or "No internet service")
+* **DeviceProtection** - indicates whether the customer has device protection (represented as "Yes," "No," or "No internet service")
+* **TechSupport** - indicates whether the customer has tech support (represented as "Yes," "No," or "No internet service")
+* **StreamingTV** - indicates whether the customer has streaming TV (represented as "Yes," "No," or "No internet service")
+* **StreamingMovies** - indicates whether the customer has streaming movies (represented as "Yes," "No," or "No internet service")
+* **Contract** - indicates the type of contract the customer has according to duration (represented as "Month-to-month," "One year," or "Two year")
+* **PaperlessBilling** - indicates whether the customer's bills are issued in paperless form (represented as "Yes" or "No")
+* **PaymentMethod** - the payment method used by the customer (represented as "Electronic check," "Mailed check," "Credit card (automatic)," or "Bank transfer (automatic)")
+* **MonthlyCharges** - the amount charged for service on a monthly basis
+* **TotalCharges** - the cumulative charges for service during the customer's subscription (tenure) period
+* **Churn** - the target variable that we are trying to predict or estimate, indicating whether the customer has left, stayed, or signed up for the service.
 
 ## Metric of Success
 
@@ -57,23 +57,27 @@ This stage involves cleaning, transforming, and organizing data so that it can b
 
 
 ## Data Exploration
-The goal of is to understand the structure, patterns, and relationships in the data.We wil first look at the distribution of data in our target variable 
+**The goal of is to understand the structure, patterns, and relationships in the data.We wil first look at the distribution of data in our target variable**
 
 ![telco](./images/churn_class.png)
 
 From the plot we notice a class imbalace issue, which we try to sort later on with SMOTE, and oversampling technique
 ![telco](./images/churn_rate.png)
-2.Bar Plot
-We also look at how features are correlated to the target variable using a barplot
+
+**We also look at how features are correlated to the target variable using a barplot**
 
 ![telco](./images/churn_features.png)
+The graph shows features that are positively correlated to the target feature on the upper side while the ones that have a negative correlation on the lower side
 
-Trendline showing the churn rate as relates to the the tenure a customer has stayed in a company
+**Trendline showing the churn rate as relates to the the tenure a customer has stayed in a company**
 ![telco](./images/most_correlated.png)
 
-A deeper look at different cohorts of customers showing their monthly charges against total charges and thier Churn rate
+The Churn rate decreases with increase in tenure
+
+**A deeper look at different cohorts of customers showing their monthly charges against total charges and thier Churn rate**
 
 ![telcon](./images/total_month_charges.png)
+The company gets more venue from longer term customers compared to short term
 
 ## Modeling
 
@@ -118,4 +122,4 @@ See full analysis in <a href ="index.ipynb">student.ipynb</a> or my presentation
 ├── images<br>
 ├── README.md<br>
 ├── Analysis of Telco Churn Rate.pdf<br>
-└── student.ipynb
+└── index.ipynb
