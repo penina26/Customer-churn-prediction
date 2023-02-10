@@ -86,13 +86,13 @@ The company gets more venue from longer term customers compared to short term
 
 Logistic regression is used to estimate the probability of descrete values based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure. This is also commonly known as the log odds, or the natural logarithm of odds. We will use it as our baseline model since It is very fast at classifying unknown records.
 
-![telco](./images/logisticreg.png)
+![telco](./images/log.png)
 
 The ROC score is 74% which shows our model is performing quite well But we can impove on it as a score of close to 100% is the best
 
 ### Best Model: Random Forest
 Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap and Aggregation, commonly known as bagging. The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees.Random forest has an advantage of low variance compared to decision tree.
-![telco](./images/randomFRE.png)
+![telco](./images/forest.png)
 
 We get an ROC of 76% which is a reasonable accuracy, but there is room for improvement.For instance using we can try to use models that more advanced in classifying imbalanced data such as Convolutional Neural Networks
 
