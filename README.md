@@ -112,7 +112,7 @@ From the Analysis, More attention should be given to customers who are on month-
 
 
 ## For More Information
-See full analysis in <a href ="index.ipynb">student.ipynb</a> or my presentation <a href ="Analysis of Telco Churn Rate.pdf">here</a>
+See full analysis in <a href ="index.ipynb">index.ipynb</a> or my presentation <a href ="Analysis of Telco Churn Rate.pdf">here</a>
 
 
 # Repository Structure
