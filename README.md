@@ -17,9 +17,9 @@ The Telco customer churn data contains information about a fictional telecommuni
 
 The features in the data are:
 
-1.customerID - a unique identifier for each customer
-2. gender - indicates the gender of the customer (male or female)
-3. SeniorCitizen - indicates whether the customer is a senior citizen (represented as 1 for yes and 0 for no)
+* **.customerID** - a unique identifier for each customer
+* **gender** - indicates the gender of the customer (male or female)
+* **SeniorCitizen** - indicates whether the customer is a senior citizen (represented as 1 for yes and 0 for no)
 4. Partner - indicates whether the customer has a partner (represented as "Yes" or "No")
 5. Dependents - indicates whether the customer has dependents, who rely on them as a primary source of income (represented as "Yes" or "No")
 6. tenure - the number of months the customer has been with the company
@@ -82,13 +82,13 @@ A deeper look at different cohorts of customers showing their monthly charges ag
 
 Logistic regression is used to estimate the probability of descrete values based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure. This is also commonly known as the log odds, or the natural logarithm of odds. We will use it as our baseline model since It is very fast at classifying unknown records.
 
-![realestate](./images/logisticreg.png)
+![telco](./images/logisticreg.png)
 
-The ROC score is 74% which shows our model is performing quite well But we can impove on it as a score of close to 100 is the bes
+The ROC score is 74% which shows our model is performing quite well But we can impove on it as a score of close to 100% is the best
 
 ### Best Model: Random Forest
 Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap and Aggregation, commonly known as bagging. The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees.Random forest has an advantage of low variance compared to decision tree.
-![realestate](./images/randomFRE.png)
+![telco](./images/randomFRE.png)
 
 We get an ROC of 76% which is a reasonable accuracy, but there is room for improvement.For instance using we can try to use models that more advanced in classifying imbalanced data such as Convolutional Neural Networks
 
@@ -117,5 +117,5 @@ See full analysis in <a href ="index.ipynb">student.ipynb</a> or my presentation
 ├── data<br>
 ├── images<br>
 ├── README.md<br>
-├── Presentation.pdf<br>
+├── Analysis of Telco Churn Rate.pdf<br>
 └── student.ipynb
