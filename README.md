@@ -8,9 +8,9 @@ Churn, in the context of a telecom company, refers to the process of a customer 
 
 ## Business Problem
 The telecom company is facing a high rate of customer churn, leading to a decline in revenue and loss of market share. The company needs to understand:-
-a)the reasons behind customer churn, 
-b)identify the segments of customers most likely to churn, 
-c)and develop strategies to reduce churn and improve customer retention
+* the reasons behind customer churn, 
+* identify the segments of customers most likely to churn, 
+* and develop strategies to reduce churn and improve customer retention
   
 ## Data Understanding
 The Telco customer churn data contains information about a fictional telecommunications company that provided home phone and Internet services to 7032 customers in California in Q3. The training dataset contains 7032 samples, each with 21 features and one Boolean variable, "churn," that indicates the class of the sample.
