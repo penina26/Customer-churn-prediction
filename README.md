@@ -41,15 +41,7 @@ The features in the data are:
 
 ## Metric of Success
 
-* High Accuracy is needed
-* Since we are dealing with an imbalanced dataset,we will keep track of the Recall and confusion matrix
-
-* **Accuracy** = Number of correctly predited test samples/Total number of test sample
-
-
-* **Recall** = True Positives/ (True positive + False negatives)
-* **F1 Score** which is a harmonic mean of precison and recall will be our measure of the model performance
-* **ROC_AUC score** which shows how well the model is performing in terms of classifying the values
+To identify a model that can accurately classify customers who churn out of the telco
 
 ## Data Preparation
 
